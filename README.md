@@ -1,14 +1,24 @@
-# roundcheckbox
-
-A new Flutter package.
-
-## Getting Started
-
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+[![style: effective dart](https://img.shields.io/badge/style-effective_dart-40c4ff.svg)](https://github.com/tenhobi/effective_dart)  
+  
+## Introduction  
+Package created to give a fully functional and customizable round CheckBox.  
+  
+## Simple Usage  
+The most simple use is this one. A prepared round checkbox that has a callback when selected/unselected.  
+  
+```dart  
+RoundCheckBox(  
+ onTap: (selected) {},),  
+```  
+  
+That will generate this:  
+  
+![enter image description here](https://s7.gifyu.com/images/12321db44a70cba04.gif)
+  
+## Customize to your needs  
+You can customize all sort of behaviors and look you want. You can do things like setting selected/unselected color, selected/unselected  
+widgets, duration of the animation, etc.  
+  
+The next example show some of the customizations.   
+  
+![enter image description here](https://s7.gifyu.com/images/20e290c2cde0e7013.md.gif)

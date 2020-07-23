@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+///Widget that draw a beautiful checkbox rounded. Provided with animation if wanted
 class RoundCheckBox extends StatefulWidget {
   const RoundCheckBox({
     Key key,
@@ -15,14 +16,31 @@ class RoundCheckBox extends StatefulWidget {
   })  : assert(onTap != null),
         super(key: key);
 
+  ///Define wether the checkbox is marked or not
   final bool isChecked;
+
+  ///Define the widget that is shown when Widgets is checked
   final Widget checkedWidget;
+
+  ///Define the widget that is shown when Widgets is unchecked
   final Widget uncheckedWidget;
+
+  ///Define the color that is shown when Widgets is checked
   final Color checkedColor;
+
+  ///Define the color that is shown when Widgets is unchecked
   final Color uncheckedColor;
+
+  ///Define the border of the widget
   final Color borderColor;
+
+  ///Define the size of the checkbox
   final double size;
+
+  ///Define Function that os executed when user tap on checkbox
   final Function(bool) onTap;
+
+  ///Define the duration of the animation. If any
   final Duration animationDuration;
 
   @override

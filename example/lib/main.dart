@@ -60,9 +60,10 @@ class CheckBox extends StatelessWidget {
             const SizedBox(height: 12),
             RoundCheckBox(
               onTap: (selected) {},
-              uncheckedWidget: Icon(Icons.close),
+              checkedWidget: Icon(Icons.mood, color: Colors.white),
+              uncheckedWidget: Icon(Icons.mood_bad),
               animationDuration: Duration(
-                seconds: 3,
+                seconds: 1,
               ),
             ),
             const SizedBox(height: 12),
