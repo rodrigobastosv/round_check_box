@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 ///Widget that draw a beautiful checkbox rounded. Provided with animation if wanted
 class RoundCheckBox extends StatefulWidget {
   const RoundCheckBox({
-    Key key,
+    Key? key,
     this.isChecked,
     this.checkedWidget,
     this.uncheckedWidget,
@@ -12,50 +12,49 @@ class RoundCheckBox extends StatefulWidget {
     this.borderColor,
     this.size,
     this.animationDuration,
-    @required this.onTap,
-  })  : assert(onTap != null),
-        super(key: key);
+    required this.onTap,
+  }) : super(key: key);
 
   ///Define wether the checkbox is marked or not
-  final bool isChecked;
+  final bool? isChecked;
 
   ///Define the widget that is shown when Widgets is checked
-  final Widget checkedWidget;
+  final Widget? checkedWidget;
 
   ///Define the widget that is shown when Widgets is unchecked
-  final Widget uncheckedWidget;
+  final Widget? uncheckedWidget;
 
   ///Define the color that is shown when Widgets is checked
-  final Color checkedColor;
+  final Color? checkedColor;
 
   ///Define the color that is shown when Widgets is unchecked
-  final Color uncheckedColor;
+  final Color? uncheckedColor;
 
   ///Define the border of the widget
-  final Color borderColor;
+  final Color? borderColor;
 
   ///Define the size of the checkbox
-  final double size;
+  final double? size;
 
   ///Define Function that os executed when user tap on checkbox
-  final Function(bool) onTap;
+  final Function(bool?) onTap;
 
   ///Define the duration of the animation. If any
-  final Duration animationDuration;
+  final Duration? animationDuration;
 
   @override
   _RoundCheckBoxState createState() => _RoundCheckBoxState();
 }
 
 class _RoundCheckBoxState extends State<RoundCheckBox> {
-  bool isChecked;
-  Duration animationDuration;
-  double size;
-  Widget checkedWidget;
-  Widget uncheckedWidget;
-  Color checkedColor;
-  Color uncheckedColor;
-  Color borderColor;
+  bool? isChecked;
+  late Duration animationDuration;
+  double? size;
+  Widget? checkedWidget;
+  Widget? uncheckedWidget;
+  Color? checkedColor;
+  Color? uncheckedColor;
+  late Color borderColor;
 
   @override
   void initState() {
@@ -81,23 +80,23 @@ class _RoundCheckBoxState extends State<RoundCheckBox> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        setState(() => isChecked = !isChecked);
-        widget?.onTap(isChecked);
+        setState(() => isChecked = !isChecked!);
+        widget.onTap(isChecked);
       },
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(size / 2),
+        borderRadius: BorderRadius.circular(size! / 2),
         child: AnimatedContainer(
           duration: animationDuration,
           height: size,
           width: size,
           decoration: BoxDecoration(
-            color: isChecked ? checkedColor : uncheckedColor,
+            color: isChecked! ? checkedColor : uncheckedColor,
             border: Border.all(
               color: borderColor,
             ),
-            borderRadius: BorderRadius.circular(size / 2),
+            borderRadius: BorderRadius.circular(size! / 2),
           ),
-          child: isChecked ? checkedWidget : uncheckedWidget,
+          child: isChecked! ? checkedWidget : uncheckedWidget,
         ),
       ),
     );

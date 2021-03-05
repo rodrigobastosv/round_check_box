@@ -1,10 +1,10 @@
 name: roundcheckbox
 description: Package to make easier the proccess of creating a round circle box. The component created is fully customizable to your needs.
-version: 1.0.0+1
+version: 2.0.0
 homepage: https://github.com/rodrigobastosv/round_check_box
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0-0 <3.0.0'
 
 dependencies:
   flutter:
