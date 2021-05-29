@@ -73,6 +73,9 @@ class _RoundCheckBoxState extends State<RoundCheckBox> {
   void didUpdateWidget(RoundCheckBox oldWidget) {
     uncheckedColor =
         widget.uncheckedColor ?? Theme.of(context).scaffoldBackgroundColor;
+    if (isChecked != widget.isChecked) {
+      isChecked = widget.isChecked ?? false;
+    }
     super.didUpdateWidget(oldWidget);
   }
 
