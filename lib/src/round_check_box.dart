@@ -71,8 +71,28 @@ class _RoundCheckBoxState extends State<RoundCheckBox> {
 
   @override
   void didUpdateWidget(RoundCheckBox oldWidget) {
-    uncheckedColor =
-        widget.uncheckedColor ?? Theme.of(context).scaffoldBackgroundColor;
+    uncheckedColor = widget.uncheckedColor ?? Theme.of(context).scaffoldBackgroundColor;
+    if (isChecked != widget.isChecked) {
+      isChecked = widget.isChecked ?? false;
+    }
+    if (animationDuration != widget.animationDuration) {
+      animationDuration = widget.animationDuration ?? Duration(milliseconds: 500);
+    }
+    if (size != widget.size) {
+      size = widget.size ?? 40.0;
+    }
+    if (checkedColor != widget.checkedColor) {
+      checkedColor = widget.checkedColor ?? Colors.green;
+    }
+    if (borderColor != widget.borderColor) {
+      borderColor = widget.borderColor ?? Colors.grey;
+    }
+    if (checkedWidget != widget.checkedWidget) {
+      checkedWidget = widget.checkedWidget ?? Icon(Icons.check, color: Colors.white);
+    }
+    if (uncheckedWidget != widget.uncheckedWidget) {
+      uncheckedWidget = widget.uncheckedWidget ?? const SizedBox.shrink();
+    }
     super.didUpdateWidget(oldWidget);
   }
 
