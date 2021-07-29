@@ -13,12 +13,13 @@ RoundCheckBox(
   
 That will generate this:  
   
-![enter image description here](https://s7.gifyu.com/images/12321db44a70cba04.gif)
+![enter image description here](assets/1.gif)
   
+
 ## Customize to your needs  
 You can customize all sort of behaviors and look you want. You can do things like setting selected/unselected color, selected/unselected  
 widgets, duration of the animation, etc.  
   
 The next example show some of the customizations.   
   
-![enter image description here](https://s7.gifyu.com/images/20e290c2cde0e7013.md.gif)
+![enter image description here](assets/2.gif)
