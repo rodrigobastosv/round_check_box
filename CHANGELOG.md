@@ -1,3 +1,5 @@
+## [2.0.2] - Adding possibility of passing your own border. #5 - https://github.com/rodrigobastosv/round_check_box/issues/5
+
 ## [2.0.1+2] - Adding gifs instead of webm
 
 ## [2.0.1+1] - Fixing images broken links
