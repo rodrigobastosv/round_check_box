@@ -9,6 +9,7 @@ class RoundCheckBox extends StatefulWidget {
     this.uncheckedWidget,
     this.checkedColor,
     this.uncheckedColor,
+    this.border,
     this.borderColor,
     this.size,
     this.animationDuration,
@@ -31,6 +32,9 @@ class RoundCheckBox extends StatefulWidget {
   final Color? uncheckedColor;
 
   ///Define the border of the widget
+  final Border? border;
+
+  ///Define the border color  of the widget
   final Color? borderColor;
 
   ///Define the size of the checkbox
@@ -111,7 +115,7 @@ class _RoundCheckBoxState extends State<RoundCheckBox> {
           width: size,
           decoration: BoxDecoration(
             color: isChecked! ? checkedColor : uncheckedColor,
-            border: Border.all(
+            border: widget.border ?? Border.all(
               color: borderColor,
             ),
             borderRadius: BorderRadius.circular(size! / 2),
