@@ -41,6 +41,10 @@ class CheckBox extends StatelessWidget {
             const SizedBox(height: 12),
             RoundCheckBox(
               onTap: (selected) {},
+              border: Border.all(
+                width: 4,
+                color: Colors.red,
+              ),
               uncheckedColor: Colors.red,
               uncheckedWidget: Icon(Icons.close, color: Colors.white),
             ),
