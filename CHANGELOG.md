@@ -1,3 +1,5 @@
+## [2.0.3] - Disabling the widget when null is passed as callback. The disabled color can be configured as will
+
 ## [2.0.2+1] - Formatting files according to dartfmt
 
 ## [2.0.2] - Adding possibility of passing your own border. #5 - https://github.com/rodrigobastosv/round_check_box/issues/5
