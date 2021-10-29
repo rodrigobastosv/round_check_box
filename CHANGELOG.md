@@ -1,4 +1,6 @@
-## [2.0.3] - Disabling the widget when null is passed as callback. The disabled color can be configured as will
+## [2.0.3+1] - Formatting files
+
+## [2.0.3] - Disabling the widget when null is passed as callback. The disabled color can be configured as willd
 
 ## [2.0.2+1] - Formatting files according to dartfmt
 

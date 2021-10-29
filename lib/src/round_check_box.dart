@@ -145,7 +145,8 @@ class _RoundCheckBoxState extends State<RoundCheckBox> {
                 color: widget.disabledColor ?? Theme.of(context).disabledColor,
                 border: widget.border ??
                     Border.all(
-                      color: widget.disabledColor ?? Theme.of(context).disabledColor,
+                      color: widget.disabledColor ??
+                          Theme.of(context).disabledColor,
                     ),
                 borderRadius: BorderRadius.circular(size! / 2),
               ),
