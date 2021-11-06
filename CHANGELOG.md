@@ -1,3 +1,5 @@
+## [2.0.4] - Fixing uncheckedColor is not working at start
+
 ## [2.0.3+1] - Formatting files
 
 ## [2.0.3] - Disabling the widget when null is passed as callback. The disabled color can be configured as willd

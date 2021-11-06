@@ -1,6 +1,6 @@
 name: roundcheckbox
 description: Package to make easier the proccess of creating a round circle box. The component created is fully customizable to your needs.
-version: 2.0.3+1
+version: 2.0.4
 homepage: https://github.com/rodrigobastosv/round_check_box
 
 environment:

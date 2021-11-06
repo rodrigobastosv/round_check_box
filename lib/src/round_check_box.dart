@@ -72,6 +72,7 @@ class _RoundCheckBoxState extends State<RoundCheckBox> {
     animationDuration = widget.animationDuration ?? Duration(milliseconds: 500);
     size = widget.size ?? 40.0;
     checkedColor = widget.checkedColor ?? Colors.green;
+    uncheckedColor = widget.uncheckedColor;
     borderColor = widget.borderColor ?? Colors.grey;
     checkedWidget =
         widget.checkedWidget ?? Icon(Icons.check, color: Colors.white);
