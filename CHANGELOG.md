@@ -1,3 +1,5 @@
+## [2.0.4+1] - Adjusting README
+
 ## [2.0.4] - Fixing uncheckedColor is not working at start
 
 ## [2.0.3+1] - Formatting files
