@@ -1,3 +1,5 @@
+## [2.0.5] - Add option for not rounded uses
+
 ## [2.0.4+1] - Adjusting README
 
 ## [2.0.4] - Fixing uncheckedColor is not working at start
